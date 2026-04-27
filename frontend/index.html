@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Automation Service</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>
+    <h1>📧 Enviar E-mail</h1>
+
+    <form id="email-form" novalidate>
+      <label for="email">
+        Destinatário
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="destino@example.com" 
+          required 
+        />
+      </label>
+
+      <label for="subject">
+        Assunto
+        <input 
+          type="text" 
+          id="subject" 
+          placeholder="Digite o assunto" 
+          required 
+        />
+      </label>
+
+      <label for="message">
+        Mensagem
+        <textarea 
+          id="message" 
+          placeholder="Digite sua mensagem..." 
+          required
+        ></textarea>
+      </label>
+
+      <button type="submit" id="submit-btn">
+        Enviar
+      </button>
+    </form>
+
+    <p class="status" id="status"></p>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
